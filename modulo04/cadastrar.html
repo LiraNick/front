@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Aluno</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="listar.html">Listar</a></li>
+            <li><a href="editar.html">Editar</a></li>
+            </ul>
+    </header>
+    <main>
+        <h1>Cadastro Alunos</h1>
+
+        <form action="">
+            <div>
+                <input type= "text" class="campos" name="nome" placeholder= "Nome">
+            </div>
+            <br>
+            <div>
+                <input type= "text" class="campos"name= "cpf" placeholder= "CPF">
+            </div>
+            <br>
+            <div>
+                <input type= "text" class="campos"name= "idade" placeholder= "Idade">
+            </div>
+            <br>
+            <div>
+                <input class="botoes salvar" id="salvar" type="submit"  value="Salvar">
+                <button class= "botoes cancelar" onclick="limpar(event)">     Limpar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <span>Desenvolvido Turma MoreDevs Noturno</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

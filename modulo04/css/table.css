@@ -1,0 +1,20 @@
+#alunos{
+    width: 80%;
+    margin: auto;
+    border: 2px #fff solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+#alunos thead{
+    background: #e7e418 ;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/*  */
+#alunos thead tr th{
+    padding: 6px 10px;
+}
+
+#alunos tbody tr th{
+    padding: 8px 10px;
+}

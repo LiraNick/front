@@ -6,7 +6,7 @@ body, div, header, main{
 }
 
 body{
-    color: aqua;
+    color: white;
     background: #000;
 }
 
@@ -26,12 +26,12 @@ body{
 }
 
 a{
-    color:aqua;
+    color:#e7e418;
     text-decoration: none;
 }
 a:hover{
-    color: black;
-    background: aqua
+    color: white;
+    background: #e7e418;
 }
 
 ul{
@@ -61,7 +61,7 @@ main{
 }
 
 footer{
-    color: aqua;
+    color: #e7e418;
     text-align: center;
     height: 40px;
     padding: 10px 0;
