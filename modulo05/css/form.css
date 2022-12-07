@@ -7,27 +7,26 @@ form{
 .campos{
     width: 200px;
     height: 20px;
-    border: 2px #e7e418 solid;
+    border: 2px red;
     border-radius: 10px;
-
 }
 
 .botoes{
     text-transform: uppercase;
     font-size: 15px;
     border: none;
-    margin-top:  20px;
+    margin-top: 20px;
     margin-left: 04px;
     width: 100px;
     height: 20px;
     border-radius: 10px;
 }
-.botoes:hover{
+.botes:hover{
     cursor: pointer;
 }
 
 .salvar, .cancelar{
-    color:#e7e418;
+    color: red;
     background: black;
-    border: 1px solid #e7e418;
+    border: 1px solid red;
 }

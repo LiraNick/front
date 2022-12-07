@@ -26,12 +26,12 @@ body{
 }
 
 a{
-    color:#e7e418;
+    color:red;
     text-decoration: none;
 }
 a:hover{
     color: white;
-    background: #e7e418;
+    background: red;
 }
 
 ul{
@@ -61,7 +61,7 @@ main{
 }
 
 footer{
-    color: #e7e418;
+    color: red;
     text-align: center;
     height: 40px;
     padding: 10px 0;

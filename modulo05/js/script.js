@@ -5,11 +5,12 @@ var elemento = document.querySelector('h1')
 //variavel recebendo inner html para incremento ou alteracao descrtivo
 elemento.innerHTML += ' JS';
 //variavel elemento recebendo estilizacao de cor 
-elemento.style.color = '#white';
+elemento.style.color = '#blue';
 //console log e o nosso print retorno variavel
 console.log(elemento);
 
 function limpar(event){
+    
     event.preventDefault();
     document.querySelector('form').reset();
     console.log('Limpando....');
@@ -17,33 +18,34 @@ function limpar(event){
 
 function salvar(event){
     event.preventDefault();
-    console.log('salvando....');
+    console.log('Salvando....');
     
     var name = document.getElementsByName('nome')[0].value;
     var doc_people = document.getElementsByName('cpf')[0].value;
     var year = document.getElementsByName('idade')[0].value;
 
-    var listaAlunos = JSON.parse(localStorage.getItem('Alunos'));
+    var listaFuncionario = JSON.parse(localStorage.getItem('Funcionarios'));
 
-    if(listaAlunos == null){
-        listaAlunos = [];
+    if(listaFuncionario == null){
+        listaFuncionario = [];
     }
-    var id = JSON.parse(localStorage.getItem('IdAluno'));
-    if(listaAlunos == null){
+    
+    var id = JSON.parse(localStorage.getItem('IdFuncionario'));
+    if(listaFuncionario == null){
         id = 0;
     }
     id = id +1;
 
-    var Aluno = {
+    var listaFuncionario = {
                     'id': id,
                     'nome': name,
                     'cpf': doc_people,
                     'idade': year
-        };listaAlunos.push(Aluno);
+        };listaFuncionario.push(funciornaio);
 
     
-    localStorage.setItem('IdAluno', JSON.stringify(id));    
-    localStorage.setItem('Alunos', JSON.stringify(listaAlunos));
+    localStorage.setItem('IdFuncionario', JSON.stringify(id));    
+    localStorage.setItem('Funcionario', JSON.stringify(listaFuncionario));
     limpar(event)
 }
 
