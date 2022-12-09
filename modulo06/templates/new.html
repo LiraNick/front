@@ -1,0 +1,39 @@
+{% extends "template.html" %}
+{% block conteudo %}
+ 
+   <div class="container">
+     <div class="page-header">
+ 
+         <h1>{{ Loja dos Mostro }}</h1>
+         <link rel="static" href="styles.css">
+ 
+     </div>
+ 
+     <form action="/criar" method="post">
+ 
+       <fieldset>
+ 
+         <div class="form-group">
+           <label for="nome">Nome</label>
+           <input type="text" id="nome" name="nome" class="form-control">
+         </div>
+ 
+         <div class="form-group">
+           <label for="idade">Idade</label>
+           <input type="text" id="idade" name="idade" class="form-control">
+         </div>
+ 
+         <div class="form-group">
+           <label for="altura">Altura</label>
+           <input type="text" id="altura" name="altura" class="form-control">
+         </div>
+ 
+         <button type="submit" class="btn btn-success">Salvar</button>
+       </fieldset>
+ 
+    </form>
+ 
+   </div>
+
+   {% endblock conteudo %}
+   
