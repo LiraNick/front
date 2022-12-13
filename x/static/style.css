@@ -1,0 +1,37 @@
+body, html{
+    background-color: white;
+    color: red;
+}
+ul{
+    display: inline-flex;
+    gap:1rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+}
+
+footer span{
+    margin: 10px 20px 10px 15px;
+    margin-left: 100px;
+}
+
+table{
+    background-color: rgba(63, 10, 223, 0.82);
+}
+
+.table-dark {
+    background-color: red !important;
+}
+
+tr:hover{
+    background-color: Grey;
+}
+
+.btn-success {
+    background-color: blue;
+}

@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block conteudo %}  
+
+<form action="/criar"method="post">
+
+    <fieldset>
+        
+        <div class="form-group">
+            <label for="nome">nome</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label for="idade">idade</label>
+            <input type="text" id="idade" name="idade" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="altura">altura</label>
+            <input type="text" id="altura" name="altura" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="estado">estado</label>
+            <input type="text" id="estado" name="estado" class="form-control">
+        </div>
+            
+        <button type="submit" class="btn btn-success">Criar</button>
+
+
+    </fieldset>
+</form>
+
+
+{% endblock conteudo %}  

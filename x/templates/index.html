@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block conteudo %}  
+
+<table class = "table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Altura</th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%for pessoa in pessoas%}
+        <tr>
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.idade}}</td>
+            <td>{{pessoa.altura}}</td>
+            <td>{{pessoa.estado}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+
+{% endblock conteudo %}  

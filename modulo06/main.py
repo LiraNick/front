@@ -2,12 +2,12 @@ from flask import Flask, render_template, redirect, request
 from funcionario import Funcionario
 
 #
+lista = [
+    funcionario1 = Funcionario('nicolas', '19', '1.70')
+    funcionario2 = Funcionario('cleiton', '24', '1.57')
+    funcionario3 = Funcionario('jorginho', '16', '1.66')
+]
 
-funcionario1 = Funcionario('nicolas', '19', '1.70')
-funcionario2 = Funcionario('cleiton', '24', '1.57')
-funcionario3 = Funcionario('jorginho', '16', '1.66')
-
-lista = [funcionario1, funcionario2, funcionario3]
 
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ def inicio():
 
 
 @app.route('/new')
-def novo():
+def new():
     return render_template('new.html', titulo = 'cadastro funcionario')
 
 @app.route('/criar', methods=['POST',])
@@ -27,7 +27,7 @@ def criar():
     idade = request.form['idade']
     altura = request.form['altura']
 
-    vr = Funcionario(nome)
+    vr = Funcionario(nome, idade, altura)
 
     lista.append(vr)
 
